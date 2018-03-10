@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F63BCD01E19486F006FA1E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63BCCF1E19486F006FA1E3 /* AppDelegate.swift */; };
+		1F63BCDA1E19486F006FA1E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F63BCD81E19486F006FA1E3 /* LaunchScreen.storyboard */; };
+		1F63BCF51E19577A006FA1E3 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F63BCF41E19577A006FA1E3 /* NotificationCenter.framework */; };
+		1F63BCF81E19577A006FA1E3 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63BCF71E19577A006FA1E3 /* TodayViewController.swift */; };
+		1F63BCFF1E19577A006FA1E3 /* Time Table.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F63BCF21E19577A006FA1E3 /* Time Table.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		51E048A999B68D8A4DFCC94A /* Pods_RSVPU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C187508CCC9C801DF81B6665 /* Pods_RSVPU.framework */; };
+		5B01FB121E6566FF0075BDDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B01FB111E6566FF0075BDDD /* Assets.xcassets */; };
+		5B01FB131E656AF40075BDDD /* MainWidget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F63BCF91E19577A006FA1E3 /* MainWidget.storyboard */; };
+		5B01FB161E65B9D40075BDDD /* debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B01FB151E65B9D40075BDDD /* debug.swift */; };
+		5B0886661E404214009E13C4 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0886651E404214009E13C4 /* SettingVC.swift */; };
+		5B245D711E59866600BA1A6A /* AdvertisementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B245D701E59866600BA1A6A /* AdvertisementVC.swift */; };
+		5B3153FF1E61CE1E0034BFE5 /* TimeTableOneDayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3153FE1E61CE1E0034BFE5 /* TimeTableOneDayVC.swift */; };
+		5B3154011E61CEF90034BFE5 /* TimeTableOneDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3154001E61CEF90034BFE5 /* TimeTableOneDayCell.swift */; };
+		5B5981C51E231CF900C23BD4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5B5981C41E231CF900C23BD4 /* Podfile */; };
+		5B758C8E1E58FFDC0031B698 /* ShowNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B758C8D1E58FFDC0031B698 /* ShowNewsVC.swift */; };
+		5BB10D3B1E58D944008FC830 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB10D3A1E58D944008FC830 /* NewsVC.swift */; };
+		5BB10D3D1E58D9CC008FC830 /* myNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB10D3C1E58D9CC008FC830 /* myNewsCell.swift */; };
+		5BBE17FA1E616F02007C335D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBE17FC1E616F02007C335D /* Main.storyboard */; };
+		5BCE5C6B1E5AEC91002A9C18 /* RSVPU_logo_clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BCE5C6A1E5AEC91002A9C18 /* RSVPU_logo_clear.png */; };
+		5BFD217E1E28284400AEAA1A /* myTimeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD217D1E28284400AEAA1A /* myTimeTableCell.swift */; };
+		5BFD21801E282A2500AEAA1A /* TimeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD217F1E282A2500AEAA1A /* TimeTableVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F63BCFD1E19577A006FA1E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F63BCC41E19486F006FA1E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F63BCF11E19577A006FA1E3;
+			remoteInfo = "Time Table";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F63BD031E19577A006FA1E3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1F63BCFF1E19577A006FA1E3 /* Time Table.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1F63BCCC1E19486F006FA1E3 /* RSVPU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSVPU.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F63BCCF1E19486F006FA1E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F63BCD91E19486F006FA1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F63BCF21E19577A006FA1E3 /* Time Table.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Time Table.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F63BCF41E19577A006FA1E3 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		1F63BCF71E19577A006FA1E3 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		1F63BCFA1E19577A006FA1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainWidget.storyboard; sourceTree = "<group>"; };
+		1F63BCFC1E19577A006FA1E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		284A279DCDE0690E49583596 /* Pods-RSVPU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSVPU.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSVPU/Pods-RSVPU.release.xcconfig"; sourceTree = "<group>"; };
+		5B01FB111E6566FF0075BDDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B01FB151E65B9D40075BDDD /* debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = debug.swift; sourceTree = "<group>"; };
+		5B0886651E404214009E13C4 /* SettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		5B245D701E59866600BA1A6A /* AdvertisementVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertisementVC.swift; sourceTree = "<group>"; };
+		5B3153FE1E61CE1E0034BFE5 /* TimeTableOneDayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableOneDayVC.swift; sourceTree = "<group>"; };
+		5B3154001E61CEF90034BFE5 /* TimeTableOneDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableOneDayCell.swift; sourceTree = "<group>"; };
+		5B5981C41E231CF900C23BD4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5B758C8D1E58FFDC0031B698 /* ShowNewsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowNewsVC.swift; sourceTree = "<group>"; };
+		5BB10D3A1E58D944008FC830 /* NewsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
+		5BB10D3C1E58D9CC008FC830 /* myNewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myNewsCell.swift; sourceTree = "<group>"; };
+		5BBE17FB1E616F02007C335D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5BBE18251E61753E007C335D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BCE5C6A1E5AEC91002A9C18 /* RSVPU_logo_clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RSVPU_logo_clear.png; sourceTree = "<group>"; };
+		5BFD217D1E28284400AEAA1A /* myTimeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myTimeTableCell.swift; sourceTree = "<group>"; };
+		5BFD217F1E282A2500AEAA1A /* TimeTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableVC.swift; sourceTree = "<group>"; };
+		C187508CCC9C801DF81B6665 /* Pods_RSVPU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSVPU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A2DEB4B4E26E53A1EAFCB5 /* Pods-RSVPU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSVPU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSVPU/Pods-RSVPU.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F63BCC91E19486F006FA1E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E048A999B68D8A4DFCC94A /* Pods_RSVPU.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F63BCEF1E19577A006FA1E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F63BCF51E19577A006FA1E3 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F63BCC31E19486F006FA1E3 = {
+			isa = PBXGroup;
+			children = (
+				5B5981C41E231CF900C23BD4 /* Podfile */,
+				1F63BCE11E194BC5006FA1E3 /* icon */,
+				1F63BCCE1E19486F006FA1E3 /* RSVPU */,
+				1F63BCF61E19577A006FA1E3 /* Time Table */,
+				1F63BCF31E19577A006FA1E3 /* Frameworks */,
+				1F63BCCD1E19486F006FA1E3 /* Products */,
+				E69913C5FEDAE2393322B68E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		1F63BCCD1E19486F006FA1E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F63BCCC1E19486F006FA1E3 /* RSVPU.app */,
+				1F63BCF21E19577A006FA1E3 /* Time Table.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F63BCCE1E19486F006FA1E3 /* RSVPU */ = {
+			isa = PBXGroup;
+			children = (
+				5BBE18251E61753E007C335D /* Info.plist */,
+				5B01FB111E6566FF0075BDDD /* Assets.xcassets */,
+				1F63BCCF1E19486F006FA1E3 /* AppDelegate.swift */,
+				1F63BCD81E19486F006FA1E3 /* LaunchScreen.storyboard */,
+				5BBE17FC1E616F02007C335D /* Main.storyboard */,
+				5BFD217F1E282A2500AEAA1A /* TimeTableVC.swift */,
+				5BFD217D1E28284400AEAA1A /* myTimeTableCell.swift */,
+				5BB10D3A1E58D944008FC830 /* NewsVC.swift */,
+				5BB10D3C1E58D9CC008FC830 /* myNewsCell.swift */,
+				5B758C8D1E58FFDC0031B698 /* ShowNewsVC.swift */,
+				5B245D701E59866600BA1A6A /* AdvertisementVC.swift */,
+				5B0886651E404214009E13C4 /* SettingVC.swift */,
+				5B3153FE1E61CE1E0034BFE5 /* TimeTableOneDayVC.swift */,
+				5B3154001E61CEF90034BFE5 /* TimeTableOneDayCell.swift */,
+				5B01FB151E65B9D40075BDDD /* debug.swift */,
+			);
+			path = RSVPU;
+			sourceTree = "<group>";
+		};
+		1F63BCE11E194BC5006FA1E3 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				5BCE5C6A1E5AEC91002A9C18 /* RSVPU_logo_clear.png */,
+			);
+			name = icon;
+			sourceTree = "<group>";
+		};
+		1F63BCF31E19577A006FA1E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F63BCF41E19577A006FA1E3 /* NotificationCenter.framework */,
+				C187508CCC9C801DF81B6665 /* Pods_RSVPU.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F63BCF61E19577A006FA1E3 /* Time Table */ = {
+			isa = PBXGroup;
+			children = (
+				1F63BCF71E19577A006FA1E3 /* TodayViewController.swift */,
+				1F63BCF91E19577A006FA1E3 /* MainWidget.storyboard */,
+				1F63BCFC1E19577A006FA1E3 /* Info.plist */,
+			);
+			path = "Time Table";
+			sourceTree = "<group>";
+		};
+		E69913C5FEDAE2393322B68E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8A2DEB4B4E26E53A1EAFCB5 /* Pods-RSVPU.debug.xcconfig */,
+				284A279DCDE0690E49583596 /* Pods-RSVPU.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F63BCCB1E19486F006FA1E3 /* RSVPU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F63BCDE1E19486F006FA1E3 /* Build configuration list for PBXNativeTarget "RSVPU" */;
+			buildPhases = (
+				07AD3A10550EA55152FAFC5B /* [CP] Check Pods Manifest.lock */,
+				1F63BCC81E19486F006FA1E3 /* Sources */,
+				1F63BCC91E19486F006FA1E3 /* Frameworks */,
+				1F63BCCA1E19486F006FA1E3 /* Resources */,
+				1F63BD031E19577A006FA1E3 /* Embed App Extensions */,
+				B82C5835CB0DB63AF019952E /* [CP] Embed Pods Frameworks */,
+				5711A3AB23700668652A1780 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F63BCFE1E19577A006FA1E3 /* PBXTargetDependency */,
+			);
+			name = RSVPU;
+			productName = RSVPU;
+			productReference = 1F63BCCC1E19486F006FA1E3 /* RSVPU.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F63BCF11E19577A006FA1E3 /* Time Table */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F63BD001E19577A006FA1E3 /* Build configuration list for PBXNativeTarget "Time Table" */;
+			buildPhases = (
+				1F63BCEE1E19577A006FA1E3 /* Sources */,
+				1F63BCEF1E19577A006FA1E3 /* Frameworks */,
+				1F63BCF01E19577A006FA1E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Time Table";
+			productName = "Time Table";
+			productReference = 1F63BCF21E19577A006FA1E3 /* Time Table.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F63BCC41E19486F006FA1E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = alekseymitkin.ru;
+				TargetAttributes = {
+					1F63BCCB1E19486F006FA1E3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					1F63BCF11E19577A006FA1E3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 78R7RQFMT8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1F63BCC71E19486F006FA1E3 /* Build configuration list for PBXProject "RSVPU" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F63BCC31E19486F006FA1E3;
+			productRefGroup = 1F63BCCD1E19486F006FA1E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F63BCCB1E19486F006FA1E3 /* RSVPU */,
+				1F63BCF11E19577A006FA1E3 /* Time Table */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F63BCCA1E19486F006FA1E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BCE5C6B1E5AEC91002A9C18 /* RSVPU_logo_clear.png in Resources */,
+				5B5981C51E231CF900C23BD4 /* Podfile in Resources */,
+				5BBE17FA1E616F02007C335D /* Main.storyboard in Resources */,
+				5B01FB121E6566FF0075BDDD /* Assets.xcassets in Resources */,
+				1F63BCDA1E19486F006FA1E3 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F63BCF01E19577A006FA1E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B01FB131E656AF40075BDDD /* MainWidget.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07AD3A10550EA55152FAFC5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5711A3AB23700668652A1780 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSVPU/Pods-RSVPU-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B82C5835CB0DB63AF019952E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSVPU/Pods-RSVPU-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F63BCC81E19486F006FA1E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B0886661E404214009E13C4 /* SettingVC.swift in Sources */,
+				5B3154011E61CEF90034BFE5 /* TimeTableOneDayCell.swift in Sources */,
+				5B01FB161E65B9D40075BDDD /* debug.swift in Sources */,
+				1F63BCD01E19486F006FA1E3 /* AppDelegate.swift in Sources */,
+				5BFD217E1E28284400AEAA1A /* myTimeTableCell.swift in Sources */,
+				5BFD21801E282A2500AEAA1A /* TimeTableVC.swift in Sources */,
+				5B245D711E59866600BA1A6A /* AdvertisementVC.swift in Sources */,
+				5BB10D3D1E58D9CC008FC830 /* myNewsCell.swift in Sources */,
+				5B3153FF1E61CE1E0034BFE5 /* TimeTableOneDayVC.swift in Sources */,
+				5BB10D3B1E58D944008FC830 /* NewsVC.swift in Sources */,
+				5B758C8E1E58FFDC0031B698 /* ShowNewsVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F63BCEE1E19577A006FA1E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F63BCF81E19577A006FA1E3 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F63BCFE1E19577A006FA1E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F63BCF11E19577A006FA1E3 /* Time Table */;
+			targetProxy = 1F63BCFD1E19577A006FA1E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F63BCD81E19486F006FA1E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F63BCD91E19486F006FA1E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1F63BCF91E19577A006FA1E3 /* MainWidget.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F63BCFA1E19577A006FA1E3 /* Base */,
+			);
+			name = MainWidget.storyboard;
+			sourceTree = "<group>";
+		};
+		5BBE17FC1E616F02007C335D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BBE17FB1E616F02007C335D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F63BCDC1E19486F006FA1E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F63BCDD1E19486F006FA1E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F63BCDF1E19486F006FA1E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8A2DEB4B4E26E53A1EAFCB5 /* Pods-RSVPU.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 78R7RQFMT8;
+				INFOPLIST_FILE = RSVPU/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = alekseymitkin.RSVPU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F63BCE01E19486F006FA1E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 284A279DCDE0690E49583596 /* Pods-RSVPU.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 78R7RQFMT8;
+				INFOPLIST_FILE = RSVPU/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = alekseymitkin.RSVPU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1F63BD011E19577A006FA1E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 78R7RQFMT8;
+				INFOPLIST_FILE = "Time Table/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alekseymitkin.RSVPU.Time-Table";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F63BD021E19577A006FA1E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 78R7RQFMT8;
+				INFOPLIST_FILE = "Time Table/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "alekseymitkin.RSVPU.Time-Table";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F63BCC71E19486F006FA1E3 /* Build configuration list for PBXProject "RSVPU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F63BCDC1E19486F006FA1E3 /* Debug */,
+				1F63BCDD1E19486F006FA1E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F63BCDE1E19486F006FA1E3 /* Build configuration list for PBXNativeTarget "RSVPU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F63BCDF1E19486F006FA1E3 /* Debug */,
+				1F63BCE01E19486F006FA1E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F63BD001E19577A006FA1E3 /* Build configuration list for PBXNativeTarget "Time Table" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F63BD011E19577A006FA1E3 /* Debug */,
+				1F63BD021E19577A006FA1E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F63BCC41E19486F006FA1E3 /* Project object */;
+}

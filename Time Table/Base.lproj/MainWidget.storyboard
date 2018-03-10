@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Time_Table" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="I.08:00-09:35" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgx-Uf-XbT">
+                                <rect key="frame" x="16" y="5" width="109" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="rHy-Nj-GMr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Осталось " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdJ-TC-Owt">
+                                <rect key="frame" x="16" y="22" width="109" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="iu3-cA-x1e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="II. 09:45-11:20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2am-qQ-ucE">
+                                <rect key="frame" x="195" y="5" width="109" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="FEW-08-WAn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" text="Осталось " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24a-w6-jtn">
+                                <rect key="frame" x="184" y="22" width="120" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Z9p-Hd-TVz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="731" text="III.12:00-13:35" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79f-B9-bDM">
+                                <rect key="frame" x="16" y="35" width="87" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="WPw-jL-7us"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" verticalHuggingPriority="251" text="Осталось " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0b-5q-SNm">
+                                <rect key="frame" x="16" y="54" width="120" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="wPI-EB-haP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IV. 13:45-15:20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsD-zu-g6L">
+                                <rect key="frame" x="195" y="35" width="109" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="Mxe-0w-CSd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V. 15:30-17:05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpC-2y-nk2">
+                                <rect key="frame" x="16" y="66.5" width="109" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="bXD-Wr-sKO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Осталось " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ths-vz-Wj9">
+                                <rect key="frame" x="16" y="86" width="120" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="ckM-a1-SpR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VI.  17:15-18:50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJy-Sn-1TH">
+                                <rect key="frame" x="194" y="67" width="110" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="oJO-xl-haT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" verticalHuggingPriority="251" text="Осталось " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prh-6j-miQ">
+                                <rect key="frame" x="184" y="86" width="120" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Fgd-fq-A9d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Осталось " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJQ-Ro-YJz">
+                                <rect key="frame" x="184" y="54" width="120" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="tKb-Wm-kTB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перерыв 40 минут" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0Y-kD-vwm">
+                                <rect key="frame" x="122" y="0.0" width="76" height="103"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="v0Y-kD-vwm" secondAttribute="bottom" id="0eG-DT-HUS"/>
+                            <constraint firstItem="SJQ-Ro-YJz" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="2G6-iU-7xh"/>
+                            <constraint firstItem="Ths-vz-Wj9" firstAttribute="top" secondItem="wpC-2y-nk2" secondAttribute="bottom" constant="5" id="3co-fl-TZX"/>
+                            <constraint firstItem="SJQ-Ro-YJz" firstAttribute="top" secondItem="BsD-zu-g6L" secondAttribute="bottom" constant="4" id="45f-zZ-QEh"/>
+                            <constraint firstItem="nJy-Sn-1TH" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="48C-60-eWK"/>
+                            <constraint firstItem="J0b-5q-SNm" firstAttribute="top" secondItem="79f-B9-bDM" secondAttribute="bottom" constant="4" id="8iI-qu-3jg"/>
+                            <constraint firstItem="Ths-vz-Wj9" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="Aht-CT-B9R"/>
+                            <constraint firstItem="v0Y-kD-vwm" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="106" id="Ctm-2W-SXv"/>
+                            <constraint firstItem="J0b-5q-SNm" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="ELZ-Va-xND"/>
+                            <constraint firstItem="2am-qQ-ucE" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="IPF-y4-4sM"/>
+                            <constraint firstItem="Bgx-Uf-XbT" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="Kxr-Qo-n3h"/>
+                            <constraint firstItem="79f-B9-bDM" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="Lq4-kb-BN4"/>
+                            <constraint firstItem="BsD-zu-g6L" firstAttribute="top" secondItem="2am-qQ-ucE" secondAttribute="bottom" constant="14.5" id="NR0-nh-pOm"/>
+                            <constraint firstItem="RdJ-TC-Owt" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="Ngg-Te-Rmm"/>
+                            <constraint firstItem="BsD-zu-g6L" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="OCA-bg-Jss"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="Ths-vz-Wj9" secondAttribute="bottom" constant="7" id="OwB-7B-irU"/>
+                            <constraint firstItem="79f-B9-bDM" firstAttribute="top" secondItem="RdJ-TC-Owt" secondAttribute="bottom" constant="3" id="XDe-ug-224"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v0Y-kD-vwm" secondAttribute="trailing" constant="106" id="aDR-uP-xNf"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="Prh-6j-miQ" secondAttribute="bottom" constant="7" id="eeK-DP-NLy"/>
+                            <constraint firstItem="24a-w6-jtn" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="hjZ-oh-vSN"/>
+                            <constraint firstItem="Prh-6j-miQ" firstAttribute="top" secondItem="nJy-Sn-1TH" secondAttribute="bottom" constant="4" id="pqR-Dp-QT9"/>
+                            <constraint firstItem="79f-B9-bDM" firstAttribute="top" secondItem="Bgx-Uf-XbT" secondAttribute="bottom" constant="15" id="q6s-Le-diU"/>
+                            <constraint firstItem="nJy-Sn-1TH" firstAttribute="top" secondItem="SJQ-Ro-YJz" secondAttribute="bottom" constant="3.5" id="qYd-sQ-Qyd"/>
+                            <constraint firstItem="wpC-2y-nk2" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="r9F-Mj-jBa"/>
+                            <constraint firstItem="Prh-6j-miQ" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="rNO-3R-Wcv"/>
+                            <constraint firstItem="wpC-2y-nk2" firstAttribute="top" secondItem="J0b-5q-SNm" secondAttribute="bottom" constant="2.5" id="sCx-Gl-bTf"/>
+                            <constraint firstItem="v0Y-kD-vwm" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="wbG-a6-Vlu"/>
+                            <constraint firstItem="BsD-zu-g6L" firstAttribute="top" secondItem="24a-w6-jtn" secondAttribute="bottom" constant="3" id="xt7-ME-ten"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="103"/>
+                    <connections>
+                        <outlet property="txt_outTimePair1" destination="RdJ-TC-Owt" id="WFB-ru-QBF"/>
+                        <outlet property="txt_outTimePair2" destination="24a-w6-jtn" id="fqe-kp-8Pc"/>
+                        <outlet property="txt_outTimePair3" destination="J0b-5q-SNm" id="mxF-Pk-6RI"/>
+                        <outlet property="txt_outTimePair4" destination="SJQ-Ro-YJz" id="EGH-u1-XPy"/>
+                        <outlet property="txt_outTimePair5" destination="Ths-vz-Wj9" id="Wkx-bN-UFf"/>
+                        <outlet property="txt_outTimePair6" destination="Prh-6j-miQ" id="ciN-xX-392"/>
+                        <outlet property="txt_pair1" destination="Bgx-Uf-XbT" id="A2k-kl-ph1"/>
+                        <outlet property="txt_pair2" destination="2am-qQ-ucE" id="3kP-Lq-ZRQ"/>
+                        <outlet property="txt_pair3" destination="79f-B9-bDM" id="Cnp-Am-Abf"/>
+                        <outlet property="txt_pair4" destination="BsD-zu-g6L" id="LJg-OZ-4Ul"/>
+                        <outlet property="txt_pair5" destination="wpC-2y-nk2" id="OeR-pZ-Wjk"/>
+                        <outlet property="txt_pair6" destination="nJy-Sn-1TH" id="l6D-T4-ZR2"/>
+                        <outlet property="txt_timeBreak" destination="v0Y-kD-vwm" id="xFd-MG-LBW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16.875" y="32.218309859154928"/>
+        </scene>
+    </scenes>
+</document>

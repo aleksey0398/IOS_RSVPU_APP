@@ -1,0 +1,117 @@
+
+/* Class = "UIBarButtonItem"; title = "+2 недели"; ObjectID = "1aW-kJ-DJI"; */
+"1aW-kJ-DJI.title" = "+2 недели";
+
+/* Class = "UILabel"; text = "subject3"; ObjectID = "2Er-N1-Y8O"; */
+"2Er-N1-Y8O.text" = "subject3";
+
+/* Class = "UITabBarItem"; title = "Объявления"; ObjectID = "3Fz-nc-uWc"; */
+"3Fz-nc-uWc.title" = "Объявления";
+
+/* Class = "UILabel"; text = "Конференция будет проходить 29 марта 2017 г. в очно-заочной форме. Участие в конференции бесплатное. Все материалы, присланные на конференцию, участвуют в Международном конкурсе научно-исследовательск..."; ObjectID = "4wC-vk-L8j"; */
+"4wC-vk-L8j.text" = "Конференция будет проходить 29 марта 2017 г. в очно-заочной форме. Участие в конференции бесплатное. Все материалы, присланные на конференцию, участвуют в Международном конкурсе научно-исследовательск...";
+
+/* Class = "UINavigationItem"; title = "Новость"; ObjectID = "7e5-TH-0oT"; */
+"7e5-TH-0oT.title" = "Новость";
+
+/* Class = "UILabel"; text = "subject2"; ObjectID = "AUS-wy-g6f"; */
+"AUS-wy-g6f.text" = "subject2";
+
+/* Class = "UINavigationItem"; title = "Объявления"; ObjectID = "C4v-Cg-J11"; */
+"C4v-Cg-J11.title" = "Объявления";
+
+/* Class = "UILabel"; text = "time6"; ObjectID = "Dok-Zf-PER"; */
+"Dok-Zf-PER.text" = "time6";
+
+/* Class = "UILabel"; text = "Number Of Day"; ObjectID = "DwU-Ue-gVM"; */
+"DwU-Ue-gVM.text" = "Number Of Day";
+
+/* Class = "UIBarButtonItem"; title = "-2 недели"; ObjectID = "GES-GE-Cd1"; */
+"GES-GE-Cd1.title" = "-2 недели";
+
+/* Class = "UILabel"; text = "subject7"; ObjectID = "GjD-Zy-xFW"; */
+"GjD-Zy-xFW.text" = "subject7";
+
+/* Class = "UISegmentedControl"; KbG-dq-DxL.segmentTitles[0] = "Группа"; ObjectID = "KbG-dq-DxL"; */
+"KbG-dq-DxL.segmentTitles[0]" = "Группа";
+
+/* Class = "UISegmentedControl"; KbG-dq-DxL.segmentTitles[1] = "Преподаватели"; ObjectID = "KbG-dq-DxL"; */
+"KbG-dq-DxL.segmentTitles[1]" = "Преподаватели";
+
+/* Class = "UISegmentedControl"; KbG-dq-DxL.segmentTitles[2] = "Аудитория"; ObjectID = "KbG-dq-DxL"; */
+"KbG-dq-DxL.segmentTitles[2]" = "Аудитория";
+
+/* Class = "UILabel"; text = "Выберите что-нибудь"; ObjectID = "LGm-zs-qpi"; */
+"LGm-zs-qpi.text" = "Выберите что-нибудь";
+
+/* Class = "UITabBarItem"; title = "Расписание"; ObjectID = "Ms4-w9-yhC"; */
+"Ms4-w9-yhC.title" = "Расписание";
+
+/* Class = "UINavigationItem"; title = "Расписание"; ObjectID = "NO6-cZ-VPw"; */
+"NO6-cZ-VPw.title" = "Расписание";
+
+/* Class = "UIButton"; normalTitle = "Закрыть"; ObjectID = "RIt-Vj-jOl"; */
+"RIt-Vj-jOl.normalTitle" = "Закрыть";
+
+/* Class = "UILabel"; text = "Конференция будет проходить 29 марта 2017 г. в очно-заочной форме. Участие в конференции бесплатное. Все материалы, присланные на конференцию, участвуют в Международном конкурсе научно-исследовательск..."; ObjectID = "Sek-Xb-FMM"; */
+"Sek-Xb-FMM.text" = "Конференция будет проходить 29 марта 2017 г. в очно-заочной форме. Участие в конференции бесплатное. Все материалы, присланные на конференцию, участвуют в Международном конкурсе научно-исследовательск...";
+
+/* Class = "UILabel"; text = "subject1"; ObjectID = "Ul9-ms-8dy"; */
+"Ul9-ms-8dy.text" = "subject1";
+
+/* Class = "UILabel"; text = "Виртуальная выставка издательства «Питер»"; ObjectID = "V1s-m9-c7w"; */
+"V1s-m9-c7w.text" = "Виртуальная выставка издательства «Питер»";
+
+/* Class = "UILabel"; text = "time5"; ObjectID = "Vem-Nk-acG"; */
+"Vem-Nk-acG.text" = "time5";
+
+/* Class = "UILabel"; text = "time1"; ObjectID = "WAZ-73-Vhl"; */
+"WAZ-73-Vhl.text" = "time1";
+
+/* Class = "UILabel"; text = "time4"; ObjectID = "ZYe-hh-M5C"; */
+"ZYe-hh-M5C.text" = "time4";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Zx9-QV-Gg7"; */
+"Zx9-QV-Gg7.text" = "Label";
+
+/* Class = "UILabel"; text = "time2"; ObjectID = "bfs-xJ-E0Y"; */
+"bfs-xJ-E0Y.text" = "time2";
+
+/* Class = "UILabel"; text = "17-02-2017 в 14:47"; ObjectID = "cw3-a2-A3b"; */
+"cw3-a2-A3b.text" = "17-02-2017 в 14:47";
+
+/* Class = "UITextField"; placeholder = "Поиск"; ObjectID = "dNM-7v-Xca"; */
+"dNM-7v-Xca.placeholder" = "Поиск";
+
+/* Class = "UINavigationItem"; title = "Настройки"; ObjectID = "dzw-wF-2K4"; */
+"dzw-wF-2K4.title" = "Настройки";
+
+/* Class = "UILabel"; text = "subject6"; ObjectID = "hfI-FG-B4W"; */
+"hfI-FG-B4W.text" = "subject6";
+
+/* Class = "UILabel"; text = "time3"; ObjectID = "i0l-tL-EM4"; */
+"i0l-tL-EM4.text" = "time3";
+
+/* Class = "UITabBarItem"; title = "Новости"; ObjectID = "kyF-4Z-VJJ"; */
+"kyF-4Z-VJJ.title" = "Новости";
+
+/* Class = "UINavigationItem"; title = "Новости"; ObjectID = "lde-cw-Hz7"; */
+"lde-cw-Hz7.title" = "Новости";
+
+/* Class = "UILabel"; text = "subject4"; ObjectID = "osV-hh-maf"; */
+"osV-hh-maf.text" = "subject4";
+
+/* Class = "UILabel"; text = "time7"; ObjectID = "p54-IV-l6B"; */
+"p54-IV-l6B.text" = "time7";
+
+/* Class = "UILabel"; text = "subject5"; ObjectID = "pNr-Eq-Zg2"; */
+"pNr-Eq-Zg2.text" = "subject5";
+
+/* Class = "UILabel"; text = "17-02-2017 в 14:47"; ObjectID = "suN-0V-DET"; */
+"suN-0V-DET.text" = "17-02-2017 в 14:47";
+
+/* Class = "UILabel"; text = "Виртуальная выставка издательства «Питер»"; ObjectID = "w22-XT-rzE"; */
+"w22-XT-rzE.text" = "Виртуальная выставка издательства «Питер»";
+
+/* Class = "UITabBarItem"; title = "Настройки"; ObjectID = "xTy-ix-ufn"; */
+"xTy-ix-ufn.title" = "Настройки";
