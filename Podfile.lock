@@ -1,0 +1,12 @@
+PODS:
+  - Kanna (2.2.1)
+
+DEPENDENCIES:
+  - Kanna (~> 2.2.1)
+
+SPEC CHECKSUMS:
+  Kanna: 182789ab065e8f9a6ccc2a74ce6283d3401c0c4a
+
+PODFILE CHECKSUM: 3e55db49dc2ce1e99ae0352fbcdee36ec7a6115c
+
+COCOAPODS: 1.2.1
