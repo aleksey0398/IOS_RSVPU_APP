@@ -12,7 +12,7 @@ import Kanna
 class myTimeTableViewController: UITableViewController {
     
     var URL_TimeTable = "http://www.rsvpu.ru/raspisanie-zanyatij-ochnoe-otdelenie/"
-    let URLTimeTableConst = "http://www.rsvpu.ru/raspisanie-zanyatij-ochnoe-otdelenie/?v_gru=1729&v_date="
+    let URLTimeTableConst = "http://www.rsvpu.ru/raspisanie-zanyatij-ochnoe-otdelenie/?v_gru=2260&v_date="
     
     
     var HTMLFromPage:String?
@@ -38,11 +38,6 @@ class myTimeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Asked for permission
-        //UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in
-        //})
-        
-        
         indicator = createIndicator()
         
         if day == 0 {
@@ -56,7 +51,7 @@ class myTimeTableViewController: UITableViewController {
             
             self.navigationItem.title = UserDefaults.standard.string(forKey: myGroupViewController.defaultKeys.groupName) ?? "ИЭ-103п"
             
-            self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+            self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
             
             self.navigationController?.navigationBar.tintColor = .white
             
@@ -272,7 +267,7 @@ class myTimeTableViewController: UITableViewController {
     }
     
     // потянуть чтобы обновить
-    func handlerRefresh(_ refresh:UIRefreshControl){
+    @objc func handlerRefresh(_ refresh:UIRefreshControl){
         
         navigationItem.title = UserDefaults.standard.string(forKey: myGroupViewController.defaultKeys.groupName)
         
@@ -492,7 +487,7 @@ class myTimeTableViewController: UITableViewController {
         let startFuncTime = Int64(Date().timeIntervalSince1970 * 1000)
         var TimeTableUncorrect = [TimeTableOneDay]()
         
-        if let docHtml = Kanna.HTML(html: HTMLFromPage!, encoding: String.Encoding.utf8){
+        if let docHtml = try? HTML(html: HTMLFromPage!, encoding: String.Encoding.utf8){
             var i = 0
             
             
@@ -655,7 +650,7 @@ class myTimeTableViewController: UITableViewController {
     func getLessonName(str:String)->String{
         let char:Character = "("
         
-        if let idx = str.characters.index(of: char){
+        if let idx = str.index(of: char){
             
             let returnedString = str.substring(to: idx)
             return returnedString

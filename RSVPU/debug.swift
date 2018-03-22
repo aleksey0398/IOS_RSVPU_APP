@@ -36,7 +36,7 @@ class debug: UIViewController {
         
         
         
-        if let docHtml = Kanna.HTML(html: htmlToParse, encoding: String.Encoding.utf8){
+        if let docHtml = try? HTML(html: htmlToParse, encoding: String.Encoding.utf8){
             var i = 0
             //получаем один день из расписания
             for timeTable in docHtml.css("td[class='disciplina ']"){
@@ -209,11 +209,11 @@ class debug: UIViewController {
     func getLessonType(str:String)->String{
         let charStart:Character = "(", charEnd:Character = ")"
         
-        if let idxStart = str.characters.index(of: charStart){
-            let idxEnd = str.characters.index(of: charEnd)
+        if let idxStart = str.index(of: charStart){
+            let idxEnd = str.index(of: charEnd)
             let typeOfLesson = str[idxStart...idxEnd!]
             print("type of lesson: \(typeOfLesson)")
-            return typeOfLesson
+            return String(typeOfLesson)
         }
         else {
             return "no type"

@@ -12,7 +12,6 @@ import Kanna
 class myGroupViewController: UIViewController,  UIPickerViewDataSource, UIPickerViewDelegate, UITableViewDataSource, UITableViewDelegate {
     
     
-    
     var URL_TimeTable = "http://www.rsvpu.ru/raspisanie-zanyatij-ochnoe-otdelenie/"
     
     @IBOutlet weak var field: UITextField!
@@ -233,7 +232,7 @@ class myGroupViewController: UIViewController,  UIPickerViewDataSource, UIPicker
         searchedElements.removeAll()
         let htmlPage = UserDefaults.standard.string(forKey: "html")
         
-        if let docHTML = Kanna.HTML(html: htmlPage!, encoding: String.Encoding.utf8) {
+        if let docHTML = try? HTML(html: htmlPage!, encoding: String.Encoding.utf8) {
             
             var i = 0
             
@@ -277,7 +276,7 @@ class myGroupViewController: UIViewController,  UIPickerViewDataSource, UIPicker
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         
         //get last position of saved group
         let savePos = UserDefaults.standard.integer(forKey: defaultKeys.groupNumber)

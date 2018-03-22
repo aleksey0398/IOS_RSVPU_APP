@@ -27,7 +27,7 @@ class NewsVC: UITableViewController {
         indicator?.startAnimating()
         //self.present(AlertLoadingFunc(), animated: false, completion: nil)
         
-        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         
         self.refreshControl?.addTarget(self, action: #selector(NewsVC.handlerRefresh(_:)), for: UIControlEvents.valueChanged)
         
@@ -91,7 +91,7 @@ class NewsVC: UITableViewController {
         
     }
     
-    func handlerRefresh(_ refresh:UIRefreshControl){
+    @objc func handlerRefresh(_ refresh:UIRefreshControl){
         
         DispatchQueue.global(qos: .background).async {
             self.getNewsHTML()
@@ -107,7 +107,7 @@ class NewsVC: UITableViewController {
     
     func parseNews()->Void {
         news.removeAll()
-        if let docHtml = Kanna.HTML(html: html!, encoding:String.Encoding.utf8){
+        if let docHtml = try? HTML(html: html!, encoding:String.Encoding.utf8){
             for news in docHtml.css("dl[class='localNewsArtc']"){
                 print("====new news====")
                 let date = news.at_css("dt")?.text ?? "error time"

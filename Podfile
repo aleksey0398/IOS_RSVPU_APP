@@ -1,5 +1,5 @@
 use_frameworks!
 
 target ‘RSVPU’ do
-    pod 'Kanna', '~> 2.2.1'
+    pod 'Kanna', '~> 4.0.0'
 end

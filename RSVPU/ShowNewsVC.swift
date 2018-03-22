@@ -45,7 +45,7 @@ class ShowNewsVC: UIViewController {
         var stringHTML = ""
         
         
-        if let kannaDoc = Kanna.HTML(html: getHTMLString(url: urlNewsLocal!), encoding: String.Encoding.utf8){
+        if let kannaDoc = try? HTML(html: getHTMLString(url: urlNewsLocal!), encoding: String.Encoding.utf8){
             let htmlFromPage = kannaDoc.at_css("div[class='content']")?.toHTML
             let gallery = kannaDoc.at_css("div[id='gallery']")?.toHTML
             let upTag = kannaDoc.at_css("p[class='upTag2']")?.toHTML

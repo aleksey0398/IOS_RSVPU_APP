@@ -12,6 +12,14 @@
 		1F63BCF51E19577A006FA1E3 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F63BCF41E19577A006FA1E3 /* NotificationCenter.framework */; };
 		1F63BCF81E19577A006FA1E3 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63BCF71E19577A006FA1E3 /* TodayViewController.swift */; };
 		1F63BCFF1E19577A006FA1E3 /* Time Table.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F63BCF21E19577A006FA1E3 /* Time Table.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1FE9EE3F20643DA600D5F745 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE9EE3D20643DA600D5F745 /* Interface.storyboard */; };
+		1FE9EE4120643DA600D5F745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE9EE4020643DA600D5F745 /* Assets.xcassets */; };
+		1FE9EE4820643DA600D5F745 /* watchTimeTable Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1FE9EE4720643DA600D5F745 /* watchTimeTable Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1FE9EE4D20643DA600D5F745 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9EE4C20643DA600D5F745 /* InterfaceController.swift */; };
+		1FE9EE4F20643DA600D5F745 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9EE4E20643DA600D5F745 /* ExtensionDelegate.swift */; };
+		1FE9EE5120643DA600D5F745 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE9EE5020643DA600D5F745 /* NotificationController.swift */; };
+		1FE9EE5320643DA600D5F745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE9EE5220643DA600D5F745 /* Assets.xcassets */; };
+		1FE9EE5820643DA600D5F745 /* watchTimeTable.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1FE9EE3B20643DA600D5F745 /* watchTimeTable.app */; };
 		51E048A999B68D8A4DFCC94A /* Pods_RSVPU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C187508CCC9C801DF81B6665 /* Pods_RSVPU.framework */; };
 		5B01FB121E6566FF0075BDDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B01FB111E6566FF0075BDDD /* Assets.xcassets */; };
 		5B01FB131E656AF40075BDDD /* MainWidget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F63BCF91E19577A006FA1E3 /* MainWidget.storyboard */; };
@@ -38,6 +46,20 @@
 			remoteGlobalIDString = 1F63BCF11E19577A006FA1E3;
 			remoteInfo = "Time Table";
 		};
+		1FE9EE4920643DA600D5F745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F63BCC41E19486F006FA1E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FE9EE4620643DA600D5F745;
+			remoteInfo = "watchTimeTable Extension";
+		};
+		1FE9EE5620643DA600D5F745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F63BCC41E19486F006FA1E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FE9EE3A20643DA600D5F745;
+			remoteInfo = watchTimeTable;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +74,28 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1FE9EE5C20643DA600D5F745 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1FE9EE4820643DA600D5F745 /* watchTimeTable Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FE9EE6020643DA600D5F745 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1FE9EE5820643DA600D5F745 /* watchTimeTable.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +107,17 @@
 		1F63BCF71E19577A006FA1E3 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		1F63BCFA1E19577A006FA1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainWidget.storyboard; sourceTree = "<group>"; };
 		1F63BCFC1E19577A006FA1E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FE9EE3B20643DA600D5F745 /* watchTimeTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchTimeTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FE9EE3E20643DA600D5F745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1FE9EE4020643DA600D5F745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FE9EE4220643DA600D5F745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FE9EE4720643DA600D5F745 /* watchTimeTable Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchTimeTable Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FE9EE4C20643DA600D5F745 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1FE9EE4E20643DA600D5F745 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1FE9EE5020643DA600D5F745 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		1FE9EE5220643DA600D5F745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FE9EE5420643DA600D5F745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FE9EE5520643DA600D5F745 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		284A279DCDE0690E49583596 /* Pods-RSVPU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSVPU.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSVPU/Pods-RSVPU.release.xcconfig"; sourceTree = "<group>"; };
 		5B01FB111E6566FF0075BDDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B01FB151E65B9D40075BDDD /* debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = debug.swift; sourceTree = "<group>"; };
@@ -100,6 +155,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1FE9EE4420643DA600D5F745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -110,6 +172,8 @@
 				1F63BCE11E194BC5006FA1E3 /* icon */,
 				1F63BCCE1E19486F006FA1E3 /* RSVPU */,
 				1F63BCF61E19577A006FA1E3 /* Time Table */,
+				1FE9EE3C20643DA600D5F745 /* watchTimeTable */,
+				1FE9EE4B20643DA600D5F745 /* watchTimeTable Extension */,
 				1F63BCF31E19577A006FA1E3 /* Frameworks */,
 				1F63BCCD1E19486F006FA1E3 /* Products */,
 				E69913C5FEDAE2393322B68E /* Pods */,
@@ -121,6 +185,8 @@
 			children = (
 				1F63BCCC1E19486F006FA1E3 /* RSVPU.app */,
 				1F63BCF21E19577A006FA1E3 /* Time Table.appex */,
+				1FE9EE3B20643DA600D5F745 /* watchTimeTable.app */,
+				1FE9EE4720643DA600D5F745 /* watchTimeTable Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,6 +240,29 @@
 			path = "Time Table";
 			sourceTree = "<group>";
 		};
+		1FE9EE3C20643DA600D5F745 /* watchTimeTable */ = {
+			isa = PBXGroup;
+			children = (
+				1FE9EE3D20643DA600D5F745 /* Interface.storyboard */,
+				1FE9EE4020643DA600D5F745 /* Assets.xcassets */,
+				1FE9EE4220643DA600D5F745 /* Info.plist */,
+			);
+			path = watchTimeTable;
+			sourceTree = "<group>";
+		};
+		1FE9EE4B20643DA600D5F745 /* watchTimeTable Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1FE9EE4C20643DA600D5F745 /* InterfaceController.swift */,
+				1FE9EE4E20643DA600D5F745 /* ExtensionDelegate.swift */,
+				1FE9EE5020643DA600D5F745 /* NotificationController.swift */,
+				1FE9EE5220643DA600D5F745 /* Assets.xcassets */,
+				1FE9EE5420643DA600D5F745 /* Info.plist */,
+				1FE9EE5520643DA600D5F745 /* PushNotificationPayload.apns */,
+			);
+			path = "watchTimeTable Extension";
+			sourceTree = "<group>";
+		};
 		E69913C5FEDAE2393322B68E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,11 +286,13 @@
 				1F63BD031E19577A006FA1E3 /* Embed App Extensions */,
 				B82C5835CB0DB63AF019952E /* [CP] Embed Pods Frameworks */,
 				5711A3AB23700668652A1780 /* [CP] Copy Pods Resources */,
+				1FE9EE6020643DA600D5F745 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				1F63BCFE1E19577A006FA1E3 /* PBXTargetDependency */,
+				1FE9EE5720643DA600D5F745 /* PBXTargetDependency */,
 			);
 			name = RSVPU;
 			productName = RSVPU;
@@ -225,23 +316,67 @@
 			productReference = 1F63BCF21E19577A006FA1E3 /* Time Table.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		1FE9EE3A20643DA600D5F745 /* watchTimeTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FE9EE5D20643DA600D5F745 /* Build configuration list for PBXNativeTarget "watchTimeTable" */;
+			buildPhases = (
+				1FE9EE3920643DA600D5F745 /* Resources */,
+				1FE9EE5C20643DA600D5F745 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FE9EE4A20643DA600D5F745 /* PBXTargetDependency */,
+			);
+			name = watchTimeTable;
+			productName = watchTimeTable;
+			productReference = 1FE9EE3B20643DA600D5F745 /* watchTimeTable.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1FE9EE4620643DA600D5F745 /* watchTimeTable Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FE9EE5920643DA600D5F745 /* Build configuration list for PBXNativeTarget "watchTimeTable Extension" */;
+			buildPhases = (
+				1FE9EE4320643DA600D5F745 /* Sources */,
+				1FE9EE4420643DA600D5F745 /* Frameworks */,
+				1FE9EE4520643DA600D5F745 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watchTimeTable Extension";
+			productName = "watchTimeTable Extension";
+			productReference = 1FE9EE4720643DA600D5F745 /* watchTimeTable Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1F63BCC41E19486F006FA1E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = alekseymitkin.ru;
 				TargetAttributes = {
 					1F63BCCB1E19486F006FA1E3 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					1F63BCF11E19577A006FA1E3 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 78R7RQFMT8;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					1FE9EE3A20643DA600D5F745 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					1FE9EE4620643DA600D5F745 = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -261,6 +396,8 @@
 			targets = (
 				1F63BCCB1E19486F006FA1E3 /* RSVPU */,
 				1F63BCF11E19577A006FA1E3 /* Time Table */,
+				1FE9EE3A20643DA600D5F745 /* watchTimeTable */,
+				1FE9EE4620643DA600D5F745 /* watchTimeTable Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -286,6 +423,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1FE9EE3920643DA600D5F745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FE9EE4120643DA600D5F745 /* Assets.xcassets in Resources */,
+				1FE9EE3F20643DA600D5F745 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FE9EE4520643DA600D5F745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FE9EE5320643DA600D5F745 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -295,13 +449,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSVPU-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5711A3AB23700668652A1780 /* [CP] Copy Pods Resources */ = {
@@ -325,9 +482,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RSVPU/Pods-RSVPU-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -363,6 +523,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1FE9EE4320643DA600D5F745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FE9EE5120643DA600D5F745 /* NotificationController.swift in Sources */,
+				1FE9EE4F20643DA600D5F745 /* ExtensionDelegate.swift in Sources */,
+				1FE9EE4D20643DA600D5F745 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -370,6 +540,16 @@
 			isa = PBXTargetDependency;
 			target = 1F63BCF11E19577A006FA1E3 /* Time Table */;
 			targetProxy = 1F63BCFD1E19577A006FA1E3 /* PBXContainerItemProxy */;
+		};
+		1FE9EE4A20643DA600D5F745 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FE9EE4620643DA600D5F745 /* watchTimeTable Extension */;
+			targetProxy = 1FE9EE4920643DA600D5F745 /* PBXContainerItemProxy */;
+		};
+		1FE9EE5720643DA600D5F745 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FE9EE3A20643DA600D5F745 /* watchTimeTable */;
+			targetProxy = 1FE9EE5620643DA600D5F745 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -388,6 +568,14 @@
 				1F63BCFA1E19577A006FA1E3 /* Base */,
 			);
 			name = MainWidget.storyboard;
+			sourceTree = "<group>";
+		};
+		1FE9EE3D20643DA600D5F745 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FE9EE3E20643DA600D5F745 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 		5BBE17FC1E616F02007C335D /* Main.storyboard */ = {
@@ -447,6 +635,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -496,6 +685,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -518,7 +708,8 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = alekseymitkin.RSVPU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -537,7 +728,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = alekseymitkin.RSVPU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -552,7 +744,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "alekseymitkin.RSVPU.Time-Table";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -567,8 +760,99 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "alekseymitkin.RSVPU.Time-Table";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1FE9EE5A20643DA600D5F745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78R7RQFMT8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "watchTimeTable Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alekseymitkin.RSVPU.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		1FE9EE5B20643DA600D5F745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78R7RQFMT8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "watchTimeTable Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = alekseymitkin.RSVPU.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		1FE9EE5E20643DA600D5F745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78R7RQFMT8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = watchTimeTable_Extension;
+				INFOPLIST_FILE = watchTimeTable/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = alekseymitkin.RSVPU.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		1FE9EE5F20643DA600D5F745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78R7RQFMT8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = watchTimeTable_Extension;
+				INFOPLIST_FILE = watchTimeTable/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = alekseymitkin.RSVPU.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
 			};
 			name = Release;
 		};
@@ -598,6 +882,24 @@
 			buildConfigurations = (
 				1F63BD011E19577A006FA1E3 /* Debug */,
 				1F63BD021E19577A006FA1E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FE9EE5920643DA600D5F745 /* Build configuration list for PBXNativeTarget "watchTimeTable Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FE9EE5A20643DA600D5F745 /* Debug */,
+				1FE9EE5B20643DA600D5F745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FE9EE5D20643DA600D5F745 /* Build configuration list for PBXNativeTarget "watchTimeTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FE9EE5E20643DA600D5F745 /* Debug */,
+				1FE9EE5F20643DA600D5F745 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
