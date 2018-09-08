@@ -195,9 +195,9 @@ class debug: UIViewController {
     func getLessonName(str:String)->String{
         let char:Character = "("
         
-        if let idx = str.characters.index(of: char){
+        if let idx = str.index(of: char){
             
-            let returnedString = str.substring(to: idx)
+            let returnedString = String(str[idx...])
             return returnedString
             // return ("Found \(char) at \(position)")
         } else {

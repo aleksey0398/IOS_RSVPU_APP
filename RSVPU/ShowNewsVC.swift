@@ -79,11 +79,11 @@ class ShowNewsVC: UIViewController {
     
     
     func createIndicator()->UIActivityIndicatorView{
-        let indicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+        let indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
         indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         indicator.center = view.center
         view.addSubview(indicator)
-        indicator.bringSubview(toFront: view)
+        indicator.bringSubviewToFront(view)
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         return indicator
     }
@@ -103,7 +103,7 @@ class ShowNewsVC: UIViewController {
         activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
         
         // exclude some activity types from the list (optional)
-        activityViewController.excludedActivityTypes = [ UIActivityType.airDrop, UIActivityType.postToFacebook ]
+        activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook ]
         
         // present the view controller
         self.present(activityViewController, animated: true, completion: nil)

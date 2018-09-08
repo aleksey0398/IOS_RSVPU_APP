@@ -276,7 +276,7 @@ class myGroupViewController: UIViewController,  UIPickerViewDataSource, UIPicker
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
         //get last position of saved group
         let savePos = UserDefaults.standard.integer(forKey: defaultKeys.groupNumber)

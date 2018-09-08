@@ -16,7 +16,7 @@ class NewsVC: UITableViewController {
     
     var html:String?
     
-    var news = [newsRSVPU]()
+    var news = [NewsRSVPU]()
     
     var indicator:UIActivityIndicatorView?
     
@@ -27,9 +27,9 @@ class NewsVC: UITableViewController {
         indicator?.startAnimating()
         //self.present(AlertLoadingFunc(), animated: false, completion: nil)
         
-        self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
-        self.refreshControl?.addTarget(self, action: #selector(NewsVC.handlerRefresh(_:)), for: UIControlEvents.valueChanged)
+        self.refreshControl?.addTarget(self, action: #selector(NewsVC.handlerRefresh(_:)), for: UIControl.Event.valueChanged)
         
         if news.count == 0{
             
@@ -55,18 +55,18 @@ class NewsVC: UITableViewController {
     }
     
     func createIndicator()->UIActivityIndicatorView{
-        let indicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+        let indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
         indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         indicator.center = view.center
         view.addSubview(indicator)
-        indicator.bringSubview(toFront: view)
+        indicator.bringSubviewToFront(view)
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         return indicator
     }
     
     func createErrorAelrt(title:String, message:String)->UIAlertController{
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title:"Ok",style: UIAlertActionStyle.default, handler: nil))
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title:"Ok",style: UIAlertAction.Style.default, handler: nil))
         
         return alert
     }
@@ -127,7 +127,7 @@ class NewsVC: UITableViewController {
                         print(textNews!)
                     }
                 }
-                self.news.append(newsRSVPU(title: title, date: date, text: textNews!, urlGetNews: url!, urlImage:imageURL!))
+                self.news.append(NewsRSVPU(title: title, date: date, text: textNews!, urlGetNews: url!, urlImage:imageURL!))
                 print("==================="+"\n")
                 
             }
@@ -205,23 +205,7 @@ class NewsVC: UITableViewController {
         
     }
     
-    
-    @IBAction func showCategory(_ sender: Any) {
-        let popeverViewController = self.storyboard?.instantiateViewController(withIdentifier:"popever") as UIViewController!
-        popeverViewController?.modalPresentationStyle = .popover
-        popeverViewController?.preferredContentSize = CGSize.init(width: 600, height: 600)
-
-        let viewController = popeverViewController?.popoverPresentationController
-    
-        viewController?.permittedArrowDirections = UIPopoverArrowDirection.up
-        
-        
-        
-        present(popeverViewController!, animated: true, completion: nil)
-    }
-    
-    
-    class newsRSVPU {
+    class NewsRSVPU {
         var title:String?
         var date:String?
         var text:String?

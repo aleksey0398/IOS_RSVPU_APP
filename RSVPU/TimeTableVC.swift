@@ -11,8 +11,8 @@ import Kanna
 
 class myTimeTableViewController: UITableViewController {
     
-    var URL_TimeTable = "http://www.rsvpu.ru/raspisanie-zanyatij-ochnoe-otdelenie/"
-    let URLTimeTableConst = "http://www.rsvpu.ru/raspisanie-zanyatij-ochnoe-otdelenie/?v_gru=2260&v_date="
+    var URLTimeTable = "http://www.rsvpu.ru/raspisanie-zanyatij-ochnoe-otdelenie/"
+    let URLTimeTableConst = "http://www.rsvpu.ru/raspisanie-zanyatij-ochnoe-otdelenie/?v_gru=2734&v_date="
     
     
     var HTMLFromPage:String?
@@ -51,13 +51,13 @@ class myTimeTableViewController: UITableViewController {
             
             self.navigationItem.title = UserDefaults.standard.string(forKey: myGroupViewController.defaultKeys.groupName) ?? "ИЭ-203п"
             
-            self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+            self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
             
             self.navigationController?.navigationBar.tintColor = .white
             
             
             //Инициализирует возможность pull_to_refresh
-            self.refreshControl?.addTarget(self, action: #selector(myTimeTableViewController.handlerRefresh(_:)), for: UIControlEvents.valueChanged)
+            self.refreshControl?.addTarget(self, action: #selector(myTimeTableViewController.handlerRefresh(_:)), for: UIControl.Event.valueChanged)
             
             if showAlertLoading {
                 indicator?.startAnimating()
@@ -71,7 +71,7 @@ class myTimeTableViewController: UITableViewController {
                 } else {
                     indicator?.startAnimating()
                     DispatchQueue.global(qos: .background).async {
-                        self.getTimeTable(myURL: self.URL_TimeTable+self.generationGetRequets(type: type, value: value!)+self.converDateForString(day: self.day, month: self.month, year: self.year))
+                        self.getTimeTable(myURL: self.URLTimeTable+self.generationGetRequets(type: type, value: value!)+self.converDateForString(day: self.day, month: self.month, year: self.year))
                         DispatchQueue.main.async {
                             self.tableView.reloadData()
                             self.indicator?.stopAnimating()
@@ -85,7 +85,7 @@ class myTimeTableViewController: UITableViewController {
             self.navigationItem.title = presentName
             indicator?.startAnimating()
             DispatchQueue.global(qos: .background).async {
-                self.getTimeTable(myURL: self.URL_TimeTable + self.presentRequest)
+                self.getTimeTable(myURL: self.URLTimeTable + self.presentRequest)
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                     self.indicator?.stopAnimating()
@@ -111,7 +111,7 @@ class myTimeTableViewController: UITableViewController {
             if showAlertLoading {
                 showAlertLoading = false
                 
-                getTimeTable(myURL: URL_TimeTable+generationGetRequets(type: type, value: value!)+converDateForString(day: day, month: month, year: year))
+                getTimeTable(myURL: URLTimeTable+generationGetRequets(type: type, value: value!)+converDateForString(day: day, month: month, year: year))
                 self.tableView.reloadData()
                 indicator?.stopAnimating()
                 
@@ -147,7 +147,7 @@ class myTimeTableViewController: UITableViewController {
             
             indicator?.startAnimating()
             DispatchQueue.global(qos: .background).async {
-                self.getTimeTable(myURL: self.URL_TimeTable+self.generationGetRequets(type: type, value: value!))
+                self.getTimeTable(myURL: self.URLTimeTable+self.generationGetRequets(type: type, value: value!))
                 DispatchQueue.main.async {
                     self.navigationItem.title = UserDefaults.standard.string(forKey: myGroupViewController.defaultKeys.groupName)
                     self.tableView.reloadData()
@@ -170,7 +170,7 @@ class myTimeTableViewController: UITableViewController {
         let type = defaults.integer(forKey: myGroupViewController.defaultKeys.numberSegment)
         let value = defaults.string(forKey: myGroupViewController.defaultKeys.getRequest)
         
-        print(URL_TimeTable+generationGetRequets(type: type, value: value!)+converDateForString(day: day, month: month, year: year))
+        print(URLTimeTable+generationGetRequets(type: type, value: value!)+converDateForString(day: day, month: month, year: year))
         
         let viewController: myTimeTableViewController = self.storyboard!.instantiateViewController(withIdentifier: "timeTable" ) as! myTimeTableViewController
         
@@ -279,7 +279,7 @@ class myTimeTableViewController: UITableViewController {
             
             //print("type: \(type)    value: \(value!)")
             
-            self.getTimeTable(myURL: self.URL_TimeTable+self.generationGetRequets(type: type, value: value!)+self.converDateForString(day: self.day, month: self.month, year: self.year))
+            self.getTimeTable(myURL: self.URLTimeTable+self.generationGetRequets(type: type, value: value!)+self.converDateForString(day: self.day, month: self.month, year: self.year))
             DispatchQueue.main.async {
                 self.refreshControl?.endRefreshing();
             }
@@ -317,7 +317,7 @@ class myTimeTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! myTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MyTableViewCell
         
         let maskLayer = CAShapeLayer()
         let bounds = cell.bounds
@@ -449,11 +449,11 @@ class myTimeTableViewController: UITableViewController {
     }
     
     func createIndicator()->UIActivityIndicatorView{
-        let indicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+        let indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
         indicator.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         indicator.center = view.center
         view.addSubview(indicator)
-        indicator.bringSubview(toFront: view)
+        indicator.bringSubviewToFront(view)
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         return indicator
     }
@@ -652,7 +652,7 @@ class myTimeTableViewController: UITableViewController {
         
         if let idx = str.index(of: char){
             
-            let returnedString = str.substring(to: idx)
+            let returnedString = String(str[idx...])
             return returnedString
         } else {
             return str
@@ -663,8 +663,8 @@ class myTimeTableViewController: UITableViewController {
     func getLessonType(str:String)->String{
         let charStart:Character = "(", charEnd:Character = ")"
         
-        if let idxStart = str.characters.index(of: charStart){
-            let idxEnd = str.characters.index(of: charEnd)
+        if let idxStart = str.index(of: charStart){
+            let idxEnd = str.index(of: charEnd)
             let typeOfLessonDirty = str[idxStart...idxEnd!]
             let typeOfLesson = typeOfLessonDirty.replacingOccurrences(of: "(", with: " ").replacingOccurrences(of: ")", with: " ")
             
@@ -683,9 +683,9 @@ class myTimeTableViewController: UITableViewController {
             return myHTMLString
         } catch {
             offlineMode = true
-            let alert = UIAlertController(title:"Ошибка", message: "Произошла какая-то ошибка. Скорее всего отсутствует подключение к интренету.\nЯ могу загрузить последнее сохранившееся расписание", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title:"Пропустить",style: UIAlertActionStyle.default, handler: nil))
-            alert.addAction(UIAlertAction(title:"Последнее расписание", style:UIAlertActionStyle.cancel, handler:{action in self.loadTimetableOld()}))
+            let alert = UIAlertController(title:"Ошибка", message: "Произошла какая-то ошибка. Скорее всего отсутствует подключение к интренету.\nЯ могу загрузить последнее сохранившееся расписание", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title:"Пропустить",style: UIAlertAction.Style.default, handler: nil))
+            alert.addAction(UIAlertAction(title:"Последнее расписание", style:UIAlertAction.Style.cancel, handler:{action in self.loadTimetableOld()}))
             self.present(alert, animated: true, completion: nil)
             self.refreshControl?.endRefreshing()
             return "Error"

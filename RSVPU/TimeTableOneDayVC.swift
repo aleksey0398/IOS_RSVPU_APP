@@ -43,7 +43,7 @@ class TimeTableOneDayVC: UITableViewController {
         
         let optionMenu = UIAlertController(title:nil,message:"Открыть расписание", preferredStyle: .actionSheet)
         
-        let cancelAction = UIAlertAction(title:"Закрыть", style: UIAlertActionStyle.cancel, handler: {
+        let cancelAction = UIAlertAction(title:"Закрыть", style: UIAlertAction.Style.cancel, handler: {
             action in print("Cancel Sheet")
         })
         
@@ -51,7 +51,7 @@ class TimeTableOneDayVC: UITableViewController {
         
         for i in 0..<count{
             
-            optionMenu.addAction(UIAlertAction(title:TimeTable?.lessons[indexPath.row].teacher[i].teacher, style: UIAlertActionStyle.default, handler:{action in
+            optionMenu.addAction(UIAlertAction(title:TimeTable?.lessons[indexPath.row].teacher[i].teacher, style: UIAlertAction.Style.default, handler:{action in
                 
                 let viewController: myTimeTableViewController = self.storyboard!.instantiateViewController(withIdentifier: "timeTable" ) as! myTimeTableViewController
                 
@@ -66,7 +66,7 @@ class TimeTableOneDayVC: UITableViewController {
                 print(self.TimeTable?.lessons[indexPath.row].teacher[i].teacherRequest ?? "action sheet teacher error")
             }))
             
-            optionMenu.addAction(UIAlertAction(title:TimeTable?.lessons[indexPath.row].classRoom[i].classRoom, style: UIAlertActionStyle.default, handler:{action in
+            optionMenu.addAction(UIAlertAction(title:TimeTable?.lessons[indexPath.row].classRoom[i].classRoom, style: UIAlertAction.Style.default, handler:{action in
                 
                 let viewController: myTimeTableViewController = self.storyboard!.instantiateViewController(withIdentifier: "timeTable" ) as! myTimeTableViewController
                 
