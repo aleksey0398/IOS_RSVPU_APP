@@ -1,5 +1,5 @@
 //
-//  myTableViewCell.swift
+//  MyTableViewCell.swift
 //  RSVPU
 //
 //  Created by Алексей Митькин on 13.01.17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class myTableViewCell: UITableViewCell {
+class MyTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var txt_time1: UILabel!

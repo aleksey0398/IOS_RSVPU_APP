@@ -49,7 +49,7 @@ class myTimeTableViewController: UITableViewController {
         //если мы не смотрим расписание по выбору
         if !presentMode {
             
-            self.navigationItem.title = UserDefaults.standard.string(forKey: myGroupViewController.defaultKeys.groupName) ?? "ИЭ-103п"
+            self.navigationItem.title = UserDefaults.standard.string(forKey: myGroupViewController.defaultKeys.groupName) ?? "ИЭ-203п"
             
             self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
             

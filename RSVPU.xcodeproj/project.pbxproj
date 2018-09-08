@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2A007320810B6200A0EB38 /* TimeTableOneDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A007220810B6200A0EB38 /* TimeTableOneDay.swift */; };
+		1F2A007420810B6200A0EB38 /* TimeTableOneDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A007220810B6200A0EB38 /* TimeTableOneDay.swift */; };
+		1F2A007520810B6200A0EB38 /* TimeTableOneDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A007220810B6200A0EB38 /* TimeTableOneDay.swift */; };
 		1F63BCD01E19486F006FA1E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63BCCF1E19486F006FA1E3 /* AppDelegate.swift */; };
 		1F63BCDA1E19486F006FA1E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F63BCD81E19486F006FA1E3 /* LaunchScreen.storyboard */; };
 		1F63BCF51E19577A006FA1E3 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F63BCF41E19577A006FA1E3 /* NotificationCenter.framework */; };
@@ -99,6 +102,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F2A007120810B6100A0EB38 /* watchTimeTable-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "watchTimeTable-Bridging-Header.h"; sourceTree = "<group>"; };
+		1F2A007220810B6200A0EB38 /* TimeTableOneDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableOneDay.swift; sourceTree = "<group>"; };
 		1F63BCCC1E19486F006FA1E3 /* RSVPU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSVPU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F63BCCF1E19486F006FA1E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F63BCD91E19486F006FA1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -162,12 +167,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA8500C46F1D02A64CB03A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F2A007020810B1100A0EB38 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				1F2A007220810B6200A0EB38 /* TimeTableOneDay.swift */,
+				1F2A007120810B6100A0EB38 /* watchTimeTable-Bridging-Header.h */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		1F63BCC31E19486F006FA1E3 = {
 			isa = PBXGroup;
 			children = (
+				1F2A007020810B1100A0EB38 /* Entity */,
 				5B5981C41E231CF900C23BD4 /* Podfile */,
 				1F63BCE11E194BC5006FA1E3 /* icon */,
 				1F63BCCE1E19486F006FA1E3 /* RSVPU */,
@@ -285,7 +307,6 @@
 				1F63BCCA1E19486F006FA1E3 /* Resources */,
 				1F63BD031E19577A006FA1E3 /* Embed App Extensions */,
 				B82C5835CB0DB63AF019952E /* [CP] Embed Pods Frameworks */,
-				5711A3AB23700668652A1780 /* [CP] Copy Pods Resources */,
 				1FE9EE6020643DA600D5F745 /* Embed Watch Content */,
 			);
 			buildRules = (
@@ -322,6 +343,7 @@
 			buildPhases = (
 				1FE9EE3920643DA600D5F745 /* Resources */,
 				1FE9EE5C20643DA600D5F745 /* Embed App Extensions */,
+				FA8500C46F1D02A64CB03A7F /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,6 +395,7 @@
 					};
 					1FE9EE3A20643DA600D5F745 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					1FE9EE4620643DA600D5F745 = {
@@ -461,21 +484,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5711A3AB23700668652A1780 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSVPU/Pods-RSVPU-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B82C5835CB0DB63AF019952E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -504,6 +512,7 @@
 				5B0886661E404214009E13C4 /* SettingVC.swift in Sources */,
 				5B3154011E61CEF90034BFE5 /* TimeTableOneDayCell.swift in Sources */,
 				5B01FB161E65B9D40075BDDD /* debug.swift in Sources */,
+				1F2A007320810B6200A0EB38 /* TimeTableOneDay.swift in Sources */,
 				1F63BCD01E19486F006FA1E3 /* AppDelegate.swift in Sources */,
 				5BFD217E1E28284400AEAA1A /* myTimeTableCell.swift in Sources */,
 				5BFD21801E282A2500AEAA1A /* TimeTableVC.swift in Sources */,
@@ -520,6 +529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F63BCF81E19577A006FA1E3 /* TodayViewController.swift in Sources */,
+				1F2A007420810B6200A0EB38 /* TimeTableOneDay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +540,7 @@
 				1FE9EE5120643DA600D5F745 /* NotificationController.swift in Sources */,
 				1FE9EE4F20643DA600D5F745 /* ExtensionDelegate.swift in Sources */,
 				1FE9EE4D20643DA600D5F745 /* InterfaceController.swift in Sources */,
+				1F2A007520810B6200A0EB38 /* TimeTableOneDay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,16 +828,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78R7RQFMT8;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = watchTimeTable_Extension;
 				INFOPLIST_FILE = watchTimeTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alekseymitkin.RSVPU.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Entity/watchTimeTable-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.2;
@@ -840,16 +855,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78R7RQFMT8;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = watchTimeTable_Extension;
 				INFOPLIST_FILE = watchTimeTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alekseymitkin.RSVPU.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Entity/watchTimeTable-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.2;

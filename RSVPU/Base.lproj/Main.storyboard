@@ -1,58 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ce0-67-yP3">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ce0-67-yP3">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Arial.ttf">
-            <string>ArialMT</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Новости-->
         <scene sceneID="99C-fB-UWV">
             <objects>
                 <tableViewController id="vGC-9Y-LZO" customClass="NewsVC" customModule="RSVPU" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="279" sectionHeaderHeight="28" sectionFooterHeight="28" id="4YR-xr-psQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myNewsCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="myNewsCell" rowHeight="279" id="35t-nm-uOv" customClass="myNewsCell" customModule="RSVPU" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="279"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="279"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="35t-nm-uOv" id="AqI-Sn-HPX">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="278.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="278.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Виртуальная выставка издательства «Питер»" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1s-m9-c7w">
-                                            <rect key="frame" x="1" y="0.0" width="318" height="20"/>
+                                            <rect key="frame" x="1" y="0.0" width="373" height="19.5"/>
                                             <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17-02-2017 в 14:47" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suN-0V-DET">
-                                            <rect key="frame" x="0.0" y="20.5" width="320" height="14"/>
+                                            <rect key="frame" x="0.0" y="20.5" width="375" height="14"/>
                                             <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sek-Xb-FMM">
-                                            <rect key="frame" x="8" y="183.5" width="304" height="84"/>
+                                            <rect key="frame" x="8" y="183.5" width="359" height="84"/>
                                             <string key="text">Конференция будет проходить 29 марта 2017 г. в очно-заочной форме. Участие в конференции бесплатное. Все материалы, присланные на конференцию, участвуют в Международном конкурсе научно-исследовательск...</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I5d-oy-7K2">
-                                            <rect key="frame" x="0.0" y="38.5" width="320" height="134.5"/>
+                                            <rect key="frame" x="0.0" y="38.5" width="375" height="134.5"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -103,11 +97,11 @@
                         <viewControllerLayoutGuide type="bottom" id="dAW-Qr-r67"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OZm-uS-LbN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="bS4-5P-L1P">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
@@ -142,15 +136,15 @@
             <objects>
                 <tableViewController storyboardIdentifier="timeTableOneDay" id="jrd-d8-Llk" customClass="TimeTableOneDayVC" customModule="RSVPU" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="144" sectionHeaderHeight="28" sectionFooterHeight="28" id="dB9-UA-Yir">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimeTableOneDayCell" rowHeight="144" id="V2u-O0-Iw0" customClass="TimeTableOneDayCell" customModule="RSVPU" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="144"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="144"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V2u-O0-Iw0" id="N4j-eD-t4S">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="143.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="143.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="08:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcA-tM-uwO">
@@ -235,26 +229,26 @@
             <objects>
                 <tableViewController storyboardIdentifier="timeTable" id="kH4-MQ-bRs" customClass="myTimeTableViewController" customModule="RSVPU" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="374" sectionHeaderHeight="28" sectionFooterHeight="28" id="U57-gn-Ojl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" rowHeight="374" id="uNd-JB-J4X" customClass="myTableViewCell" customModule="RSVPU" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="374"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="374"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uNd-JB-J4X" id="hyT-1i-Pq2">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="373.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="373.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name of week" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JC-ou-l64">
-                                            <rect key="frame" x="8" y="4" width="304" height="19.5"/>
+                                            <rect key="frame" x="8" y="4" width="359" height="19.5"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYT-PW-Wj6">
-                                            <rect key="frame" x="0.0" y="27.5" width="320" height="49"/>
+                                            <rect key="frame" x="0.0" y="27.5" width="375" height="49"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAZ-73-Vhl">
                                                     <rect key="frame" x="8" y="0.0" width="54" height="49"/>
@@ -266,7 +260,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Митькин А.Е" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otd-qH-X8v">
-                                                    <rect key="frame" x="182" y="20" width="130" height="21"/>
+                                                    <rect key="frame" x="237" y="20" width="130" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="Zi5-rX-xhl"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="ofT-He-Bvq"/>
@@ -276,7 +270,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subject1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ul9-ms-8dy">
-                                                    <rect key="frame" x="62" y="8" width="250" height="16"/>
+                                                    <rect key="frame" x="62" y="8" width="305" height="16"/>
                                                     <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
@@ -310,7 +304,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4G-xK-OQQ">
-                                            <rect key="frame" x="0.0" y="76.5" width="320" height="49"/>
+                                            <rect key="frame" x="0.0" y="76.5" width="375" height="49"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eel-uf-DYb">
                                                     <rect key="frame" x="8" y="0.0" width="54" height="49"/>
@@ -322,14 +316,14 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subject1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UF4-nG-Yyh">
-                                                    <rect key="frame" x="62" y="8" width="250" height="16"/>
+                                                    <rect key="frame" x="62" y="8" width="305" height="16"/>
                                                     <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Митькин А.Е" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdP-af-lrQ">
-                                                    <rect key="frame" x="182" y="20" width="130" height="21"/>
+                                                    <rect key="frame" x="237" y="20" width="130" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="78c-Y5-3z1"/>
                                                         <constraint firstAttribute="width" constant="130" id="tul-uk-kmt"/>
@@ -365,7 +359,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXG-sN-aIp">
-                                            <rect key="frame" x="0.0" y="125.5" width="320" height="49"/>
+                                            <rect key="frame" x="0.0" y="125.5" width="375" height="49"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6n-4m-j9j">
                                                     <rect key="frame" x="8" y="0.0" width="54" height="49"/>
@@ -377,14 +371,14 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subject1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QS-CP-951">
-                                                    <rect key="frame" x="62" y="8" width="250" height="16"/>
+                                                    <rect key="frame" x="62" y="8" width="305" height="16"/>
                                                     <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Митькин А.Е" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Y7-sd-BiR">
-                                                    <rect key="frame" x="182" y="20" width="130" height="21"/>
+                                                    <rect key="frame" x="237" y="20" width="130" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="Jpp-gj-KOh"/>
                                                         <constraint firstAttribute="width" constant="130" id="Wbq-Ph-Oq9"/>
@@ -421,7 +415,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGU-mf-RRg">
-                                            <rect key="frame" x="0.0" y="174.5" width="320" height="49"/>
+                                            <rect key="frame" x="0.0" y="174.5" width="375" height="49"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJC-EU-tcN">
                                                     <rect key="frame" x="8" y="0.0" width="54" height="49"/>
@@ -433,14 +427,14 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subject1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVf-DP-Xn2">
-                                                    <rect key="frame" x="62" y="8" width="250" height="16"/>
+                                                    <rect key="frame" x="62" y="8" width="305" height="16"/>
                                                     <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Митькин А.Е" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEd-A1-d0g">
-                                                    <rect key="frame" x="182" y="20" width="130" height="21"/>
+                                                    <rect key="frame" x="237" y="20" width="130" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="U4Y-zt-dpv"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="b4h-WS-DTH"/>
@@ -476,7 +470,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTO-Sh-cHp">
-                                            <rect key="frame" x="0.0" y="223.5" width="320" height="49"/>
+                                            <rect key="frame" x="0.0" y="223.5" width="375" height="49"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSN-o5-9v7">
                                                     <rect key="frame" x="8" y="0.0" width="54" height="49"/>
@@ -488,14 +482,14 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subject1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elM-Bf-4eW">
-                                                    <rect key="frame" x="62" y="8" width="250" height="16"/>
+                                                    <rect key="frame" x="62" y="8" width="305" height="16"/>
                                                     <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Митькин А.Е" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7le-pg-ean">
-                                                    <rect key="frame" x="182" y="20" width="130" height="21"/>
+                                                    <rect key="frame" x="237" y="20" width="130" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="Acc-Uv-mLp"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="eWp-gr-jyU"/>
@@ -532,7 +526,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbd-eQ-85Z">
-                                            <rect key="frame" x="0.0" y="272.5" width="320" height="49"/>
+                                            <rect key="frame" x="0.0" y="272.5" width="375" height="49"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mud-oG-dNm">
                                                     <rect key="frame" x="8" y="0.0" width="54" height="49"/>
@@ -544,7 +538,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subject1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V17-8n-fzA">
-                                                    <rect key="frame" x="62" y="8" width="250" height="16"/>
+                                                    <rect key="frame" x="62" y="8" width="305" height="16"/>
                                                     <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
@@ -560,7 +554,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Митькин А.Е" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFM-o8-G99">
-                                                    <rect key="frame" x="182" y="20" width="130" height="21"/>
+                                                    <rect key="frame" x="237" y="20" width="130" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="tRs-0s-UnR"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="uYm-7u-IHx"/>
@@ -587,7 +581,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Skp-Cy-T26">
-                                            <rect key="frame" x="0.0" y="321.5" width="320" height="49"/>
+                                            <rect key="frame" x="0.0" y="321.5" width="375" height="49"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLx-en-JLo">
                                                     <rect key="frame" x="8" y="0.0" width="54" height="49"/>
@@ -599,7 +593,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subject1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLQ-B0-HyQ">
-                                                    <rect key="frame" x="62" y="8" width="250" height="16"/>
+                                                    <rect key="frame" x="62" y="8" width="305" height="16"/>
                                                     <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
@@ -615,7 +609,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Митькин А.Е" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPw-fw-Hxb">
-                                                    <rect key="frame" x="182" y="20" width="130" height="21"/>
+                                                    <rect key="frame" x="237" y="20" width="130" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="6Sy-t8-LwX"/>
                                                     </constraints>
@@ -642,7 +636,7 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdG-NQ-eXz">
-                                            <rect key="frame" x="8" y="5" width="304" height="19.5"/>
+                                            <rect key="frame" x="8" y="5" width="359" height="19.5"/>
                                             <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -755,18 +749,18 @@
                         <viewControllerLayoutGuide type="bottom" id="7yp-dX-tWI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0Jt-hQ-WzJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RwY-th-s0O">
-                                <rect key="frame" x="0.0" y="162" width="320" height="133"/>
+                                <rect key="frame" x="0.0" y="162" width="375" height="232"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="N6F-Gr-rq2">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N6F-Gr-rq2" id="bj5-5h-gxo">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -777,20 +771,20 @@
                                 </connections>
                             </tableView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7Z-3t-7d1">
-                                <rect key="frame" x="0.0" y="303" width="320" height="216"/>
+                                <rect key="frame" x="0.0" y="402" width="375" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="4hU-aL-UBO" id="hga-g0-bcT"/>
                                     <outlet property="delegate" destination="4hU-aL-UBO" id="1rH-Pr-Q0s"/>
                                 </connections>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите что-нибудь" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGm-zs-qpi">
-                                <rect key="frame" x="0.0" y="133" width="320" height="21"/>
+                                <rect key="frame" x="0.0" y="133" width="375" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KbG-dq-DxL">
-                                <rect key="frame" x="1" y="101" width="318" height="29"/>
+                                <rect key="frame" x="1" y="101" width="373" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="tG9-7E-OfS"/>
                                 </constraints>
@@ -804,7 +798,7 @@
                                 </connections>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Поиск" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dNM-7v-Xca">
-                                <rect key="frame" x="3" y="66" width="314" height="30"/>
+                                <rect key="frame" x="3" y="66" width="369" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -816,7 +810,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIt-Vj-jOl">
-                                <rect key="frame" x="320" y="64" width="70" height="30"/>
+                                <rect key="frame" x="375" y="64" width="70" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="da9-TU-Zdq"/>
                                 </constraints>
@@ -869,7 +863,7 @@
                     <tabBarItem key="tabBarItem" title="Расписание" image="timetable.png" id="Ms4-w9-yhC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="FPS-oh-C4L">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.31684085280000002" green="0.71111667950000002" blue="0.78493813450000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -910,7 +904,7 @@
                     <tabBarItem key="tabBarItem" title="Настройки" image="setting" id="xTy-ix-ufn"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="wx9-Qi-TF2">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.34171051260000002" green="0.76693407089999999" blue="0.84654996329999999" alpha="0.53341716610000001" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -930,7 +924,7 @@
                     <tabBarItem key="tabBarItem" title="Новости" image="newspaper" id="kyF-4Z-VJJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="VYe-0T-mKq">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.34171051260000002" green="0.76693407089999999" blue="0.84654996329999999" alpha="0.53341716610000001" colorSpace="custom" customColorSpace="sRGB"/>
@@ -949,39 +943,39 @@
             <objects>
                 <tableViewController id="Sv2-QQ-75r" customClass="AdvertisementVC" customModule="RSVPU" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="279" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZhP-8C-KmJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myNewsCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="myNewsCell" rowHeight="279" id="Qjg-6f-jEG" customClass="myNewsCell" customModule="RSVPU" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="279"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="279"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qjg-6f-jEG" id="ZM9-7N-7Pb">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="278.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="278.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Виртуальная выставка издательства «Питер»" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w22-XT-rzE">
-                                            <rect key="frame" x="1" y="0.0" width="318" height="20"/>
+                                            <rect key="frame" x="1" y="0.0" width="373" height="19.5"/>
                                             <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17-02-2017 в 14:47" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cw3-a2-A3b">
-                                            <rect key="frame" x="0.0" y="21" width="320" height="14"/>
+                                            <rect key="frame" x="0.0" y="21" width="375" height="14"/>
                                             <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wC-vk-L8j">
-                                            <rect key="frame" x="8" y="187" width="304" height="84"/>
+                                            <rect key="frame" x="8" y="187.5" width="359" height="84"/>
                                             <string key="text">Конференция будет проходить 29 марта 2017 г. в очно-заочной форме. Участие в конференции бесплатное. Все материалы, присланные на конференцию, участвуют в Международном конкурсе научно-исследовательск...</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1ly-B6-5xd">
-                                            <rect key="frame" x="0.0" y="39" width="320" height="137"/>
+                                            <rect key="frame" x="0.0" y="39" width="375" height="137.5"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -1030,7 +1024,7 @@
                     <tabBarItem key="tabBarItem" title="Объявления" image="fire" id="3Fz-nc-uWc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Kvu-Rv-V0c">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.34171051260000002" green="0.76693407089999999" blue="0.84654996329999999" alpha="0.53341716610000001" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1046,12 +1040,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fire" width="24" height="24"/>
-        <image name="home" width="24" height="24"/>
-        <image name="newspaper" width="24" height="24"/>
-        <image name="school" width="24" height="24"/>
-        <image name="setting" width="24" height="24"/>
+        <image name="fire" width="48" height="48"/>
+        <image name="home" width="48" height="48"/>
+        <image name="newspaper" width="48" height="48"/>
+        <image name="school" width="48" height="48"/>
+        <image name="setting" width="48" height="48"/>
         <image name="timetable.png" width="24" height="24"/>
-        <image name="today" width="25" height="25"/>
+        <image name="today" width="50" height="50"/>
     </resources>
 </document>
